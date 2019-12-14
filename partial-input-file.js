@@ -33,7 +33,7 @@ export default class PartialInputFile {
   }
 
   error(err) {
-    console.log('input file error')
+    console.error('input file error:', err);
     this.inputFile.error(err);
     this.reject(err);
   }
